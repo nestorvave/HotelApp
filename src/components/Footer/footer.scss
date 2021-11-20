@@ -1,0 +1,39 @@
+footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:  space-around;
+    position: absolute;
+    top: 100%;
+    background-color: rgba(80, 78, 78, 0.959);
+    flex-direction: column;
+    
+    p{
+        color: white;
+    }
+    .svg{
+        display: flex;
+        justify-content: space-around;
+        width: 22%;
+       
+        img{
+            width: 20px;
+        }
+    }
+}
+
+@media (min-width: 550px) { 
+    footer{
+        .svg{
+            width: 14%;
+        }
+    }
+}
+@media (min-width: 750px) { 
+    footer{
+        .svg{
+            width: 7%;
+        }
+    }
+}

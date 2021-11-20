@@ -1,0 +1,33 @@
+.allHotels{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e3737;
+    position: relative;
+   
+    
+}
+.without-information{
+    background-color: red;
+    min-height: 770px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+@media (min-width: 850px) { 
+    .allHotels{
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 780px;
+        align-items: center;
+        justify-content: center;
+     
+    }
+}

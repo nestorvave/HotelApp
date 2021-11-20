@@ -1,0 +1,181 @@
+.hotelCard{
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #2E324A;
+    color: white;
+    margin-top:15px;
+  
+   
+    img{
+        width: 100%;
+        height: 40%;
+    }
+    .hotelCard-description{
+       
+        height: 52%;
+        width: 90%;
+
+        h2{
+          
+            height: 40px;
+            text-align: center;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-bottom:5px;
+           font-size: 20px;
+            height: 13%;
+        }
+        .hotelCard-information{
+           
+            height: auto;
+            font-size: 14px;
+            margin-bottom: 5px;
+           
+
+        }
+        .hotelCard-country{
+            display: flex;
+            flex-direction: row;
+            margin-bottom:5px;
+            justify-content: flex-start;
+            align-items: center;
+            border-radius:10px;
+            width: 90%;
+            height: 14%;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.705);
+            color: #2E324A;
+
+
+            img{
+                height: 25px;
+                width: 25px;
+                border-radius: 10px;
+            }
+        }
+         .hotelCard-items{
+            width: 90%;
+            box-shadow: 0px 3px 10px #3a2b2b;
+            border-radius:10px;
+            background-color:rgba(255, 255, 255, 0.705);
+            color: #2E324A;
+           
+
+
+
+        }
+    }
+    .hotelCard-items{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+         justify-content: space-around;
+        align-items: center;
+        img{
+            height: 25px;
+            width: 25px;
+            border-radius: 10px;
+        }
+          
+        
+    }
+    .hotelCard-btn-reservation{
+        background-color: #156BC1;
+        color: white;
+        width: 95%;
+        height: 40px;
+        border-radius: 20px;
+        margin: 0 auto;
+        box-shadow: 0px 3px 10px rgb(58, 43, 43);
+        
+        &:hover{
+            box-shadow: 0 2px 6px #eee ;
+        }
+
+    }
+}
+// MEDIA QUERY TABLET
+@media (min-width: 550px) { 
+    .hotelCard{ 
+        width: 90%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+      
+       
+        img{
+            width: 35%;
+            height: 100%;
+        }
+        .hotelCard-description{
+            height: 85%;
+            width: 68%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+    
+            h2{
+               
+                height: 20px;
+                text-align: center;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+               
+
+            }
+            p{
+                text-align: center;
+                padding: 5px;
+            }
+
+
+             
+        }
+        
+        .hotelCard-btn-reservation{
+            position: absolute;
+            width: 40%;
+            height: 40px;
+            top: 83%;
+            left: 45%;
+
+        }
+    }
+ }
+
+ @media (min-width: 850px) { 
+    .hotelCard{
+        width: 45%;
+        margin: 15px;
+        height: 360px;
+    }
+    img{
+        width: 37%;
+        height: 100%;
+    }
+    .hotelCard-description{
+        height: 85%;
+        width: 65%;
+       
+ }
+}
