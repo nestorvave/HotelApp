@@ -4,8 +4,9 @@ import { NavBar } from "../NavBar/NavBar";
 import "./header.scss";
 
 export const Header = () => {
-  const { country, avaliable } = useContext(DataContext);
+  const { country, avaliable, price,size} = useContext(DataContext);
   const { from, to } = avaliable;
+  const{val}=size
 
   const convertUnixToDate = (from, to) => {
     let dateFrom = [];
@@ -39,7 +40,17 @@ export const Header = () => {
     return { dateFrom, dateTo };
   };
   let x = convertUnixToDate(from, to);
+  let priceNatural
 
+  if(price===1){
+    priceNatural="Cheap"
+  }else if(price===2){
+    priceNatural="Confort"
+  }else if(price===3){
+    priceNatural="Luxurious"
+  }else{
+    priceNatural="Awesome"
+  }
   return (
     <header className="header">
       <img
@@ -67,6 +78,8 @@ export const Header = () => {
           ) : (
             ""
           )}
+          {price===false?"":<p>Price:{priceNatural}</p>}
+          {val==="All"?"":<p>Size:{val}</p>}
         </div>
       </div>
 

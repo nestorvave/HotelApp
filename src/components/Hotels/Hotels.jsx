@@ -94,11 +94,7 @@ export const Hotels = () => {
     filterSelected = filterSize(roomfrom, roomto, filterSelected);
     filterSelected = filterDate(from, to, filterSelected);
     setHotel(filterSelected);
-
-  }, [country, price, size, avaliable, from, roomfrom, to, setHotel, roomto ]);
-
-
-  
+  }, [country, price, size, avaliable, from, roomfrom, to, setHotel, roomto]);
 
   return (
     <section
@@ -148,7 +144,6 @@ export const Hotels = () => {
       )}
 
       <Footer />
-
     </section>
   );
 };
